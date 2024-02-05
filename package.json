@@ -2,6 +2,10 @@
   "private": true,
   "name": "botbuilder-js",
   "version": "4.13.0",
+  "repository": "https://github.com/JhontSouth/botbuilder-js.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "workspaces": [
     "libraries/*",
     "libraries/functional-tests/dialogToDialog/*",
@@ -58,7 +62,9 @@
     "**/istanbul-lib-instrument/@babel/core": "^7.23.2",
     "**/@babel/plugin-proposal-class-properties/@babel/core": "^7.23.2",
     "follow-redirects": "^1.14.8",
-    "@types/ramda": "0.26.0"
+    "@types/ramda": "0.26.0",
+    "**/@azure/core-util": "1.6.0",
+    "**/@azure/core-auth": "1.4.0"
   },
   "devDependencies": {
     "@azure/logger": "^1.0.2",
