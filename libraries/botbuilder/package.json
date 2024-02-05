@@ -1,5 +1,5 @@
 {
-  "name": "botbuilder",
+  "name": "botbuilder-jhontsouth",
   "author": "Microsoft Corp.",
   "description": "Bot Builder is a framework for building rich bots on virtually any platform.",
   "version": "4.1.6",
@@ -13,9 +13,9 @@
   "bugs": {
     "url": "https://github.com/Microsoft/botbuilder-js/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/botbuilder-js.git"
+  "repository": "https://github.com/JhontSouth/botbuilder-js.git",
+  "publishConfig": {
+    "jhontsouth:registry": "https://npm.pkg.github.com"
   },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -30,11 +30,11 @@
     "@azure/core-http": "^3.0.2",
     "@azure/msal-node": "^1.2.0",
     "axios": "^1.6.0",
-    "botbuilder-core": "4.1.6",
-    "botbuilder-stdlib": "4.1.6",
-    "botframework-connector": "4.1.6",
-    "botframework-schema": "4.1.6",
-    "botframework-streaming": "4.1.6",
+    "botbuilder-core": "4.21.4",
+    "botbuilder-stdlib": "4.21.4-internal",
+    "botframework-connector": "4.21.4",
+    "botframework-schema": "4.21.4",
+    "botframework-streaming": "4.21.4",
     "dayjs": "^1.10.3",
     "filenamify": "^4.1.0",
     "fs-extra": "^7.0.1",
@@ -47,6 +47,11 @@
     "lodash": "^4.17.20",
     "nock": "^11.9.1",
     "node-mocks-http": "^1.10.1"
+  },
+  "resolutions": {
+    "**/@azure/core-rest-pipeline": "1.6.0",
+    "**/@azure/core-util": "1.6.0",
+    "**/@azure/core-auth": "1.4.0"
   },
   "scripts": {
     "build": "tsc -b",
